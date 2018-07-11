@@ -10,6 +10,7 @@ import atexit
 from nbconvert.preprocessors import ExecutePreprocessor, CellExecutionError
 import nbformat as nbf
 import uuid
+import ast
 
 sys.path.append('/opt/anaconda/bin/')
 import cioppy
