@@ -11,6 +11,7 @@ from nbconvert.preprocessors import ExecutePreprocessor, CellExecutionError
 import nbformat as nbf
 import uuid
 import ast
+import glob
 
 sys.path.append('/opt/anaconda/bin/')
 import cioppy
@@ -187,7 +188,7 @@ def clean_up():
     shutil.rmtree(os.path.split(tmp_dir)[0])
     
 def main():
-
+    
     global runtime
     runtime = os.path.join(ciop.tmp_dir, str(uuid.uuid4()))    
 
